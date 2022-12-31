@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jamshedalamqaderi.kotlin.spintaxkt.SpintaxktUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-31T06:37:39" hostname="MacBooks-MacBook-Air.local" time="0.574">
+  <properties/>
+  <testcase name="testParser()" classname="com.jamshedalamqaderi.kotlin.spintaxkt.SpintaxktUtilsTest" time="0.574"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

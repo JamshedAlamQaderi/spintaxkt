@@ -1,0 +1,20 @@
+{
+  "reports": [{"ic": "/Users/macbookair/projects/spintaxk/build/kover/test.ic"}],
+  "modules": [{
+      "sources": [
+        "/Users/macbookair/projects/spintaxk/src/main/antlr",
+        "/Users/macbookair/projects/spintaxk/src/main/kotlin",
+        "/Users/macbookair/projects/spintaxk/src/main/java",
+        "/Users/macbookair/projects/spintaxk/src/main/resources"
+      ],
+      "output": [
+        "/Users/macbookair/projects/spintaxk/build/classes/java/main",
+        "/Users/macbookair/projects/spintaxk/build/classes/kotlin/main"
+      ]
+    }],
+  "result": [{
+      "aggregatedReportFile": "/Users/macbookair/projects/spintaxk/build/tmp/koverHtmlReport/agg-ic.ic",
+      "smapFile": "/Users/macbookair/projects/spintaxk/build/tmp/koverHtmlReport/agg-smap.smap",
+      "filters": {}
+    }]
+}

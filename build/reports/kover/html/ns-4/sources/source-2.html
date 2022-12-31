@@ -1,0 +1,159 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > SpintaxktSingleSentenceGenerator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.jamshedalamqaderi.kotlin.spintaxkt.visitors</a>
+</div>
+
+<h1>Coverage Summary for Class: SpintaxktSingleSentenceGenerator (com.jamshedalamqaderi.kotlin.spintaxkt.visitors)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+<th class="coverageStat 
+">
+  Instruction, %
+</th>
+</tr>
+<tr>
+  <td class="name">SpintaxktSingleSentenceGenerator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (4/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (12/12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    96.7%
+  </span>
+  <span class="absValue">
+    (58/60)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.jamshedalamqaderi.kotlin.spintaxkt.visitors
+&nbsp;
+&nbsp;import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktBaseVisitor
+&nbsp;import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktParser
+&nbsp;import kotlin.random.Random
+&nbsp;import org.antlr.v4.runtime.tree.TerminalNode
+&nbsp;
+<b class="fc">&nbsp;class SpintaxktSingleSentenceGenerator : SpintaxktBaseVisitor&lt;Unit&gt;() {</b>
+<b class="fc">&nbsp;    private val builder = StringBuilder()</b>
+<b class="fc">&nbsp;    var sentence: String = &quot;&quot;</b>
+&nbsp;        private set
+<b class="fc">&nbsp;        get() = builder.toString()</b>
+&nbsp;
+&nbsp;
+&nbsp;    override fun visitElement(ctx: SpintaxktParser.ElementContext) {
+<b class="fc">&nbsp;        if (ctx.choice() != null) {</b>
+<b class="fc">&nbsp;            return visit(ctx.choice())</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return visitTerminal(ctx.TEXT())</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun visitChoice(ctx: SpintaxktParser.ChoiceContext) {
+<b class="fc">&nbsp;        val element = ctx.element()</b>
+<b class="pc">&nbsp;        if (element.isEmpty()) return</b>
+<b class="fc">&nbsp;        val choice = element[Random.nextInt(element.size)]</b>
+<b class="fc">&nbsp;        return visitElement(choice)</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    override fun visitTerminal(node: TerminalNode?) {
+<b class="pc">&nbsp;        builder.append(node?.text)</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-12-31 12:37</div>
+</div>
+</body>
+</html>
