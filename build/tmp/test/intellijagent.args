@@ -1,8 +1,0 @@
-/Users/macbookair/projects/spintaxk/build/kover/test.ic
-false
-false
-true
-false
--exclude
-android\..*
-com\.android\..*

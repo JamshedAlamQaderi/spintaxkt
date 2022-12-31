@@ -1,0 +1,31 @@
+name: 'Analyse'
+
+on:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: 'spintaxkt-analyse'
+  cancel-in-progress: true
+
+jobs:
+  Analyse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup JAVA
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          check-latest: true
+          cache: 'gradle'
+      - name: Generate Test Coverage
+        run: ./gradlew koverXmlReport
+      - name: Uploading code coverage
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./build/reports/kover/xml/report.xml
+          fail_ci_if_error: true
