@@ -9,7 +9,7 @@ plugins {
     antlr
 }
 
-group = "com.jamshedalamqaderi.kotlin"
+group = "com.jamshedalamqaderi.spintaxkt"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -38,4 +38,34 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+mavenPublishing {
+    pom {
+        name.set("Spintaxkt")
+        description.set("Spintaxkt is a Kotlin library for parsing spintax strings and generating all possible combinations of sentences.")
+        inceptionYear.set("2023")
+        url.set("https://github.com/JamshedAlamQaderi/spintaxkt")
+        licenses {
+            license {
+                name.set("The Apache License, Version 2.0")
+                url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                distribution.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+            }
+        }
+        developers {
+            developer {
+                id.set("JamshedAlamQaderi")
+                name.set("Jamshed Alam Qaderi")
+                url.set("https://github.com/JamshedAlamQaderi")
+            }
+        }
+        scm {
+            url.set("https://github.com/JamshedAlamQaderi/spintaxkt")
+            connection.set("scm:git:git://github.com/JamshedAlamQaderi/spintaxkt.git")
+            developerConnection.set("scm:git:ssh://git@github.com/JamshedAlamQaderi/spintaxkt.git")
+        }
+    }
+    signAllPublications()
+    publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.S01, true)
 }

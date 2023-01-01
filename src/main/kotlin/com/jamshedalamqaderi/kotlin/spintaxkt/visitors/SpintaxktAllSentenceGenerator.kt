@@ -1,6 +1,5 @@
 package com.jamshedalamqaderi.kotlin.spintaxkt.visitors
 
-
 import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktBaseVisitor
 import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktParser
 import org.antlr.v4.runtime.tree.TerminalNode

@@ -1,9 +1,9 @@
 package com.jamshedalamqaderi.kotlin.spintaxkt
 
 import com.jamshedalamqaderi.kotlin.spintaxkt.SpintaxktUtils.parser
+import org.junit.jupiter.api.Test
 import kotlin.test.assertContains
 import kotlin.test.assertEquals
-import org.junit.jupiter.api.Test
 
 class SpintaxktUtilsTest {
     @Test
@@ -25,5 +25,4 @@ class SpintaxktUtilsTest {
         assertEquals(12, sentences2.size)
         assertEquals(12, parser2.variations())
     }
-
 }

@@ -26,7 +26,7 @@ To use Spintaxkt in your project, add the following dependency to your `build.gr
 
 ```kotlin
 dependencies {
-    implementation("com.jamshedalamqaderi.kotlin:spintaxkt:1.0.0")
+    implementation("com.jamshedalamqaderi.spintaxkt:spintaxkt:1.0.0")
 }
 ```
 
