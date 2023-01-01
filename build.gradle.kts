@@ -12,7 +12,7 @@ plugins {
 val projectVersion: String? by project
 
 group = "com.jamshedalamqaderi.spintaxkt"
-version = projectVersion ?: "0.0.1-SNAPSHOT"
+version = projectVersion?.replaceFirst("v", "", ignoreCase = true) ?: "0.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
