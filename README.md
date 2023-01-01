@@ -1,3 +1,9 @@
+![Maven Central](https://img.shields.io/maven-central/v/com.jamshedalamqaderi.spintaxkt/spintaxkt)
+
+[![CodeFactor](https://www.codefactor.io/repository/github/jamshedalamqaderi/spintaxkt/badge)](https://www.codefactor.io/repository/github/jamshedalamqaderi/spintaxkt)
+
+![CI](https://github.com/JamshedAlamQaderi/anview/actions/workflows/ci.yml/badge.svg) ![Analyse](https://github.com/JamshedAlamQaderi/anview/actions/workflows/analyse.yml/badge.svg) ![Publish](https://github.com/JamshedAlamQaderi/anview/actions/workflows/publish.yml/badge.svg)
+
 # Spintaxkt
 
 Spintaxkt is a Kotlin library for parsing spintax strings and generating all possible combinations
@@ -21,12 +27,13 @@ each with two alternatives. When expanded, this spintax string generates four po
 Spintax can also be nested, allowing for more complex combinations of alternatives.
 
 ## Setup
+![Maven Central](https://img.shields.io/maven-central/v/com.jamshedalamqaderi.spintaxkt/spintaxkt)
 
 To use Spintaxkt in your project, add the following dependency to your `build.gradle` file:
-
 ```kotlin
+// see above maven central badge for get the latest version 
 dependencies {
-    implementation("com.jamshedalamqaderi.spintaxkt:spintaxkt:1.0.0")
+    implementation("com.jamshedalamqaderi.spintaxkt:spintaxkt:<spintaxkt_version>")
 }
 ```
 
@@ -72,13 +79,14 @@ by clicking on the button below:
 
 ## Credits
 
-Spintaxkt was developed by [JamshedAlamQaderi](https://github.com/JamshedAlamQaderi/JamshedAlamQaderi).
+Spintaxkt was developed
+by [JamshedAlamQaderi](https://github.com/JamshedAlamQaderi/JamshedAlamQaderi).
 
 ## License
 
 Spintaxkt is licensed under the Apache License 2.0.
 
-Copyright [2023] [jamshedalamqaderi.com]
+Copyright 2023 [Jamshed Alam Qaderi](https://github.com/JamshedAlamQaderi/JamshedAlamQaderi)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
