@@ -1,4 +1,4 @@
-package com.jamshedalamqaderi.kotlin.spintaxkt.interfaces
+package com.jamshedalamqaderi.spintaxkt.interfaces
 
 interface SpintaxktParser {
     fun sentence(): String

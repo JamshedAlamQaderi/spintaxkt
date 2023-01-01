@@ -25,10 +25,10 @@ dependencies {
 
 tasks.generateGrammarSource {
     enabled = false
-    outputDirectory = file("src/main/java/com/jamshedalamqaderi/kotlin/spintaxkt/parser/")
+    outputDirectory = file("src/main/java/com/jamshedalamqaderi/spintaxkt/parser/")
     arguments = arguments + listOf(
         "-package",
-        "com.jamshedalamqaderi.kotlin.spintaxkt.parser",
+        "com.jamshedalamqaderi.spintaxkt.parser",
         "-visitor",
         "-no-listener"
     )

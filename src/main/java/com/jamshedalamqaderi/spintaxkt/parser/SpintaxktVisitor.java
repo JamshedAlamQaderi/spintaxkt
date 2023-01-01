@@ -1,5 +1,5 @@
 // Generated from java-escape by ANTLR 4.11.1
-package com.jamshedalamqaderi.kotlin.spintaxkt.parser;
+package com.jamshedalamqaderi.spintaxkt.parser;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**

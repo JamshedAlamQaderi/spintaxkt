@@ -1,6 +1,6 @@
-package com.jamshedalamqaderi.kotlin.spintaxkt
+package com.jamshedalamqaderi.spintaxkt
 
-import com.jamshedalamqaderi.kotlin.spintaxkt.SpintaxktUtils.parser
+import com.jamshedalamqaderi.spintaxkt.SpintaxktUtils.parser
 import org.junit.jupiter.api.Test
 import kotlin.test.assertContains
 import kotlin.test.assertEquals

@@ -1,21 +1,21 @@
-package com.jamshedalamqaderi.kotlin.spintaxkt.impl
+package com.jamshedalamqaderi.spintaxkt.impl
 
-import com.jamshedalamqaderi.kotlin.spintaxkt.interfaces.SpintaxktParser
-import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktLexer
-import com.jamshedalamqaderi.kotlin.spintaxkt.visitors.SpintaxktAllSentenceGenerator
-import com.jamshedalamqaderi.kotlin.spintaxkt.visitors.SpintaxktSingleSentenceGenerator
-import com.jamshedalamqaderi.kotlin.spintaxkt.visitors.SpintaxktVariationCounter
+import com.jamshedalamqaderi.spintaxkt.parser.SpintaxktLexer
+import com.jamshedalamqaderi.spintaxkt.visitors.SpintaxktAllSentenceGenerator
+import com.jamshedalamqaderi.spintaxkt.visitors.SpintaxktSingleSentenceGenerator
+import com.jamshedalamqaderi.spintaxkt.visitors.SpintaxktVariationCounter
 import org.antlr.v4.runtime.CharStreams
 import org.antlr.v4.runtime.CommonTokenStream
 
-class SpintaxktParserImpl(spintax: String) : SpintaxktParser {
+class SpintaxktParserImpl(spintax: String) :
+    com.jamshedalamqaderi.spintaxkt.interfaces.SpintaxktParser {
     private val sentenceGenerator = SpintaxktSingleSentenceGenerator()
     private val variationCounter = SpintaxktVariationCounter()
     private val allSentenceGenerator = SpintaxktAllSentenceGenerator()
 
     private var cachedVariations = -1
 
-    private val spintaxCtx = com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktParser(
+    private val spintaxCtx = com.jamshedalamqaderi.spintaxkt.parser.SpintaxktParser(
         CommonTokenStream(
             SpintaxktLexer(
                 CharStreams.fromString(spintax)

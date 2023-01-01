@@ -1,7 +1,7 @@
-package com.jamshedalamqaderi.kotlin.spintaxkt.visitors
+package com.jamshedalamqaderi.spintaxkt.visitors
 
-import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktBaseVisitor
-import com.jamshedalamqaderi.kotlin.spintaxkt.parser.SpintaxktParser
+import com.jamshedalamqaderi.spintaxkt.parser.SpintaxktBaseVisitor
+import com.jamshedalamqaderi.spintaxkt.parser.SpintaxktParser
 
 class SpintaxktVariationCounter : SpintaxktBaseVisitor<Unit>() {
     var variations = 1
