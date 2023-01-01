@@ -1,6 +1,6 @@
 ![Maven Central](https://img.shields.io/maven-central/v/com.jamshedalamqaderi.spintaxkt/spintaxkt)
 
-[![CodeFactor](https://www.codefactor.io/repository/github/jamshedalamqaderi/spintaxkt/badge)](https://www.codefactor.io/repository/github/jamshedalamqaderi/spintaxkt)
+[![CodeFactor](https://www.codefactor.io/repository/github/jamshedalamqaderi/spintaxkt/badge)](https://www.codefactor.io/repository/github/jamshedalamqaderi/spintaxkt) [![codecov](https://codecov.io/gh/JamshedAlamQaderi/spintaxkt/branch/main/graph/badge.svg?token=H2P30R66CX)](https://codecov.io/gh/JamshedAlamQaderi/spintaxkt)
 
 ![CI](https://github.com/JamshedAlamQaderi/anview/actions/workflows/ci.yml/badge.svg) ![Analyse](https://github.com/JamshedAlamQaderi/anview/actions/workflows/analyse.yml/badge.svg) ![Publish](https://github.com/JamshedAlamQaderi/anview/actions/workflows/publish.yml/badge.svg)
 
